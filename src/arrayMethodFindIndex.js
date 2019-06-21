@@ -8,7 +8,7 @@ function applyCustomFindIndex() {
     // write code here
 
     for (let i = 0; i < this.length; i++) {
-      if (callback(this[i], i, this === true)) {
+      if (callback(this[i], i, this) === true) {
         return i;
       }
     }

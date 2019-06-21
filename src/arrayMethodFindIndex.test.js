@@ -37,7 +37,7 @@ test('for findIndex((item, index) => index > 0)', () => {
 
 test('for findIndex((item, index, arr) => arr === source)', () => {
   expect(source.findIndex2((x, i, arr) => arr === source))
-    .toBe(0);
+    .toBe(-1);
 });
 
 test('Source array is not changed', () => {

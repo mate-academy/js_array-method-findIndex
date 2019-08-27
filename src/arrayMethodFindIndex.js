@@ -10,6 +10,7 @@ function applyCustomFindIndex() {
         return i;
       }
     }
+
     return -1;
   };
 }

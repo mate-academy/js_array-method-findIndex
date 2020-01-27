@@ -3,6 +3,7 @@
 const applyCustomFindIndex = require('./arrayMethodFindIndex');
 
 const source = [0, 10, 20, 30];
+
 applyCustomFindIndex();
 
 test('findIndex2 is added to [].__proto__', () => {

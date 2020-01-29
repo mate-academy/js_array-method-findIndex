@@ -5,7 +5,15 @@
  */
 function applyCustomFindIndex() {
   [].__proto__.findIndex2 = function(callback) {
-    // write code here
+    for (let i = 0; i < this.length; i++) {
+      const isCallback = callback(this[i], i, this);
+
+      if (isCallback) {
+        return i;
+      }
+    }
+
+    return -1;
   };
 }
 
